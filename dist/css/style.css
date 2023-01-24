@@ -255,9 +255,7 @@ h6 {
 }
 
 .content-webinar__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -267,6 +265,16 @@ h6 {
 
 .content-webinar__item:not(:last-child) {
   border-bottom: 1px solid #FFFFFF;
+}
+
+.content-webinar__item:nth-child(1),
+.content-webinar__item:nth-child(2),
+.content-webinar__item:nth-child(3),
+.content-webinar__item:nth-child(4),
+.content-webinar__item:nth-child(5) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .content-webinar__content {
